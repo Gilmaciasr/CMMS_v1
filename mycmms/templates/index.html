@@ -3,7 +3,62 @@
 
 {% block content %}
 <title>HOME PAGE</title>
-    <h1>This is index page</h1>
-{% endblock content %}
 
-    
+<h1>This is index page</h1>
+
+    <div class="row">
+        <div class="col-md-2">
+            <div class="card border-primary mb-3" style="max-width: auto">
+                <div class="card-header text-primary text-center">Service requests</div>
+                <div class="card-body text-primary">
+                  <ul class="card-text text-body">
+                    <li>Service request 1</li>
+                    <li>Service request 2</li>
+                    <li>Service request 3</li> 
+                    <li>Service request 1</li>
+                    <li>Service request 2</li>
+                    <li>Service request 3</li>
+                    <li>Service request 1</li>
+                    <li>Service request 2</li>
+                    <li>Service request 3</li>
+                    <li>Service request 1</li>
+                    <li>Service request 2</li>
+                    <li>Service request 3</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-1">
+            <!--BLANK SPACE-->
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card text-bg-success mb-3" style="max-width:auto">
+                <div class="card-header">Schedule Compliance</div>
+                <div class="card-body">
+                  <h1 class="card-title">80%</h1>
+                  <p class="card-text">Compliance percentaje</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card text-bg-warning mb-3" style="max-width:auto">
+                <div class="card-header">Ongoing</div>
+                <div class="card-body">
+                  <h1 class="card-title">10%</h1>
+                  <p class="card-text">Ongoing MP</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="card text-bg-danger mb-3" style="max-width:auto">
+                <div class="card-header">Expired maintenance</div>
+                <div class="card-body">
+                  <h1 class="card-title">10%</h1>
+                  <p class="card-text">Show expired maintenance</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+{% endblock content %}
+   
