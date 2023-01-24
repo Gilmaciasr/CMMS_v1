@@ -20,4 +20,6 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.HomePage.as_view(), name='home'),
+    path('cmms_app/', include('cmms_app.urls', namespace='cmms_app')),
+    path('cmms_app/', include('django.contrib.auth.urls')),
 ]
