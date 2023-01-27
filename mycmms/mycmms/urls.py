@@ -15,11 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth import views as auth_views
 from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.HomePage.as_view(), name='home'),
+    path('', auth_views.LoginView.as_view(template_name="cmms_app/login.html"), name='login'),
+    path('home', views.HomePage.as_view(), name='home'),
     path('cmms_app/', include('cmms_app.urls', namespace='cmms_app')),
     path('cmms_app/', include('django.contrib.auth.urls')),
 ]

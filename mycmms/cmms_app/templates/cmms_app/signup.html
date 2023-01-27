@@ -3,15 +3,32 @@
 
 
 {% block content %}
-<div class="container">
-    <h1>Sign Up</h1>
-    <form method="post">
-        {% csrf_token %}
-        {% bootstrap_form form %}
-        <input type="submit" value="Sign Up" class=" btn btn-default">
-        
-    </form>
+
+<div class="row">
+    <div class="col-md-4">
+    </div>
+    <!-- CENTER GRID BLOCK -->
+    <div class="col-md-4">
+        <!-- CARD BLOCK -->
+        <div class="card border-info mb-3">
+            <div class="card-header"><h1>Signup</h1></div>
+                <div class="card-body">
+                    <!-- LOGIN FORM BLOCK -->
+                    <div class="container">
+                        <form method="post">
+                            {% csrf_token %}
+                            {% bootstrap_form form %}
+                            <input type="submit" value="Sign Up" class=" btn btn-default">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+    </div>
 </div>
+
     
 {% endblock content %}
 
