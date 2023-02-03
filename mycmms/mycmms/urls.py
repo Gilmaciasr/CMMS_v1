@@ -24,4 +24,6 @@ urlpatterns = [
     path('home', views.HomePage.as_view(), name='home'),
     path('cmms_app/', include('cmms_app.urls', namespace='cmms_app')),
     path('cmms_app/', include('django.contrib.auth.urls')),
+    path('inventory/', include('inventory.urls', namespace='inventory')),
+    path('metrics/', include('metrics.urls', namespace='metrics')),
 ]

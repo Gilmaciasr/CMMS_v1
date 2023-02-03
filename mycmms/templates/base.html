@@ -25,10 +25,10 @@
               <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Inventory</a>
+              <a class="nav-link" href="{% url 'inventory:inventory' %}">Inventory</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Metrics</a>
+              <a class="nav-link" href="{% url 'metrics:metrics' %}">Metrics</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href=" {% url 'cmms_app:logout' %}">Logout</a>
