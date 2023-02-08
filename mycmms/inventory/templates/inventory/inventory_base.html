@@ -1,12 +1,30 @@
 {% extends 'base.html' %}
+{% load static %}
 
 
+<!--CSS DATATABLE-->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css">
 
 {% block content %}
- 
+<h1>This is inventory base page!</h1> 
 <div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <div class="table-responsive">
+                <table id="datatable-devices">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Brand</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    
 
-    <h1>This is inventory base page!</h1>
 
 </div>
 
@@ -14,6 +32,16 @@
 
 
 {% endblock content %}
+<!--CUSTOM JQUERY-->
+<script src="{% static 'js/inventory_base.js' %}"></script>
+<!--JQUERY-->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!--DATA TABLE-->
+<script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
+
+
+
     
 
 
